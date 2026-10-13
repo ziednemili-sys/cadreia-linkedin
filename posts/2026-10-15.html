@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="../gabarits/style.css">
+<style>
+.duel .colonne h2 { font-family: var(--serif); font-size: 36px; display: flex; align-items: center; gap: 14px; }
+.pastille { width: 44px; height: 44px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-family: var(--sans); font-size: 26px; font-weight: 800; flex: none; }
+.colonne .pastille { background: var(--marine); color: var(--or); }
+.colonne.sombre .pastille { background: var(--or); color: var(--marine); }
+.colonne ul { list-style: none; }
+.colonne li { margin: 0 0 20px 0; padding-left: 22px; border-left: 4px solid var(--trait); }
+.colonne.sombre li { border-left-color: var(--or); }
+.colonne li b { display: block; font-size: 25px; color: var(--marine); margin-bottom: 4px; }
+.colonne.sombre li b { color: #fff; }
+.colonne li span { font-size: 21px; color: var(--texte-doux); line-height: 1.32; display: block; }
+.colonne.sombre li span { color: var(--sur-marine); }
+.regle { margin-top: 24px; background: #fff; border: 2px solid var(--or); border-radius: 16px; padding: 22px 30px; font-size: 26px; font-weight: 700; text-align: center; }
+.regle em { font-style: normal; color: var(--or); }
+</style></head><body>
+<div class="haut">
+  <div class="surtitre">Fiche pratique</div>
+  <h1>Ce que l'IA fait <em>bien</em>,<br>et ce qu'elle fait mal.</h1>
+  <div class="sous-titre">Pour savoir quand lui confier une tâche, et quand garder la main</div>
+</div>
+<div class="contenu">
+  <div class="duel">
+    <div class="colonne">
+      <h2><span class="pastille">+</span>Confiez-lui</h2>
+      <ul>
+        <li><b>Le premier jet</b><span>Mail, trame de réunion, plan de note : une base à retravailler.</span></li>
+        <li><b>La reformulation</b><span>Changer le ton, raccourcir, simplifier pour un autre public.</span></li>
+        <li><b>La synthèse</b><span>Résumer un document que vous lui fournissez vous-même.</span></li>
+        <li><b>La mise en ordre</b><span>Transformer des notes en vrac en liste structurée.</span></li>
+        <li><b>Les alternatives</b><span>Dix titres, cinq objections client, trois scénarios.</span></li>
+      </ul>
+    </div>
+    <div class="colonne sombre">
+      <h2><span class="pastille">!</span>Gardez la main</h2>
+      <ul>
+        <li><b>Les sources et citations</b><span>Elle peut inventer une référence crédible. Vérifiez.</span></li>
+        <li><b>Les calculs qui comptent</b><span>Un total ou un pourcentage se recalcule dans Excel.</span></li>
+        <li><b>L'actualité récente</b><span>Sans recherche web, ses connaissances s'arrêtent à une date.</span></li>
+        <li><b>Votre contexte</b><span>Elle ignore vos clients, vos règles et vos enjeux internes.</span></li>
+        <li><b>Les décisions humaines</b><span>Évaluer, recadrer, trancher : c'est votre rôle.</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="regle">L'IA prépare. <em>Vous vérifiez et vous décidez.</em></div>
+</div>
+<!--PIED-->
+</body></html>
