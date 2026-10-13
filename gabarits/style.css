@@ -1,0 +1,61 @@
+/* Identité visuelle des posts LinkedIn Cadreia. Format portrait 1080 x 1350. */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Manrope:wght@400;500;700;800&display=swap");
+
+:root {
+  --marine: #0E1B33;
+  --or: #C99A3E;
+  --fond: #F4F6F9;
+  --carte: #FFFFFF;
+  --trait: #E3E7EE;
+  --texte-doux: #4A5470;
+  --sur-marine: #C9D3E6;
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans: "Manrope", Inter, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; overflow: hidden; }
+body { background: var(--fond); color: var(--marine); font-family: var(--sans); position: relative; }
+
+/* En-tête marine */
+.haut { background: var(--marine); color: #fff; padding: 56px 72px 46px; }
+.surtitre { color: var(--or); font-weight: 800; letter-spacing: 3px; font-size: 24px; text-transform: uppercase; }
+h1 { font-family: var(--serif); font-weight: 700; font-size: 68px; line-height: 1.08; margin-top: 16px; }
+h1 em { font-style: normal; color: var(--or); }
+.sous-titre { margin-top: 20px; font-size: 29px; line-height: 1.3; color: var(--sur-marine); }
+
+/* Zone de contenu : tout doit tenir au-dessus du pied (bas à 1240 px) */
+.contenu { padding: 36px 72px 0; }
+
+/* Grille de cartes numérotées (2 colonnes) */
+.cartes { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.carte { background: var(--carte); border: 2px solid var(--trait); border-radius: 18px; padding: 26px 28px 24px; }
+.num { width: 52px; height: 52px; border-radius: 50%; background: var(--marine); color: var(--or); font-weight: 800; font-size: 28px; display: flex; align-items: center; justify-content: center; }
+.carte h2 { font-size: 30px; font-weight: 800; line-height: 1.15; margin-top: 14px; }
+.carte p { font-size: 23px; line-height: 1.35; color: var(--texte-doux); margin-top: 10px; }
+
+/* Liste verticale (actualités, étapes) */
+.liste { display: flex; flex-direction: column; gap: 20px; }
+.element { background: var(--carte); border: 2px solid var(--trait); border-left: 8px solid var(--or); border-radius: 14px; padding: 26px 30px; }
+.element .etiquette { font-size: 20px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--or); }
+.element h2 { font-size: 31px; font-weight: 800; line-height: 1.18; margin-top: 8px; }
+.element p { font-size: 23px; line-height: 1.38; color: var(--texte-doux); margin-top: 10px; }
+.element .pour-vous { color: var(--marine); font-weight: 700; }
+
+/* Comparatif deux colonnes */
+.duel { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.colonne { background: var(--carte); border: 2px solid var(--trait); border-radius: 18px; padding: 28px; }
+.colonne.sombre { background: var(--marine); color: #fff; border-color: var(--marine); }
+.colonne h2 { font-size: 30px; margin-bottom: 16px; }
+.colonne li { font-size: 23px; line-height: 1.35; margin: 0 0 12px 26px; }
+.colonne.sombre li { color: var(--sur-marine); }
+
+/* Encadré prompt à copier */
+.prompt { background: var(--marine); color: #E8ECF5; border-radius: 18px; padding: 32px 36px; font-size: 24px; line-height: 1.45; }
+.prompt b { color: var(--or); }
+
+/* Pied de page fixe */
+.pied { position: absolute; left: 0; right: 0; bottom: 0; height: 110px; background: #fff; border-top: 2px solid var(--trait); display: flex; align-items: center; justify-content: space-between; padding: 0 72px; }
+.marque { display: flex; align-items: center; gap: 16px; font-family: var(--serif); font-weight: 700; font-size: 34px; }
+.signature { font-size: 23px; color: var(--texte-doux); }
+.sources { position: absolute; left: 72px; right: 72px; bottom: 122px; font-size: 18px; color: var(--texte-doux); }
