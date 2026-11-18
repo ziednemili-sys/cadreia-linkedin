@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="../gabarits/style.css">
+<style>
+.haut { padding: 40px 72px 32px; }
+h1 { font-size: 62px; }
+.sous-titre { margin-top: 14px; }
+.contenu { padding-top: 34px; }
+.phase { display: grid; grid-template-columns: 170px 1fr; gap: 20px; margin-bottom: 20px; }
+.phase .nom { background: var(--marine); color: var(--or); border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; font-weight: 800; font-size: 21px; letter-spacing: 2px; text-transform: uppercase; }
+.phase .nom span { display: block; color: #fff; font-family: var(--serif); font-size: 46px; letter-spacing: 0; text-transform: none; margin-bottom: 6px; }
+.etapes { display: flex; flex-direction: column; gap: 12px; }
+.etape { background: #fff; border: 2px solid var(--trait); border-radius: 14px; padding: 12px 22px; display: flex; gap: 18px; align-items: flex-start; }
+.etape .num { flex: none; width: 44px; height: 44px; font-size: 23px; margin-top: 2px; }
+.etape h2 { font-size: 25px; font-weight: 800; line-height: 1.2; }
+.etape p { font-size: 20px; line-height: 1.32; color: var(--texte-doux); margin-top: 4px; }
+.etape p b { color: var(--marine); }
+.regle { margin-top: 8px; background: var(--marine); color: #fff; border-radius: 16px; padding: 16px 30px; font-size: 24px; font-weight: 700; text-align: center; }
+.regle em { font-style: normal; color: var(--or); }
+</style></head><body>
+<div class="haut">
+  <div class="surtitre">Fiche pratique</div>
+  <h1>Faire parler un <em>tableau</em><br>avec l'IA</h1>
+  <div class="sous-titre">6 étapes pour analyser un export Excel sans vous faire piéger</div>
+</div>
+<div class="contenu">
+  <div class="phase">
+    <div class="nom"><span>1</span>Préparer</div>
+    <div class="etapes">
+      <div class="etape"><div class="num">1</div><div><h2>Nettoyez l'export</h2><p>Une seule ligne d'en-tête, pas de cellules fusionnées. Retirez les noms et données personnelles inutiles.</p></div></div>
+      <div class="etape"><div class="num">2</div><div><h2>Expliquez les colonnes</h2><p>Unité, période, HT ou TTC. L'IA ne devine pas que «&nbsp;Mt&nbsp;» veut dire montant en milliers d'euros.</p></div></div>
+    </div>
+  </div>
+  <div class="phase">
+    <div class="nom"><span>2</span>Interroger</div>
+    <div class="etapes">
+      <div class="etape"><div class="num">3</div><div><h2>Faites-lui décrire le fichier</h2><p><b>«&nbsp;Combien de lignes, quelles colonnes, quelles valeurs manquantes&nbsp;?&nbsp;»</b> Si c'est faux, la suite le sera aussi.</p></div></div>
+      <div class="etape"><div class="num">4</div><div><h2>Une question précise à la fois</h2><p>«&nbsp;Quels clients ont le plus réduit leurs achats entre T1 et T2&nbsp;?&nbsp;» plutôt que «&nbsp;analyse ce tableau&nbsp;».</p></div></div>
+    </div>
+  </div>
+  <div class="phase">
+    <div class="nom"><span>3</span>Contrôler</div>
+    <div class="etapes">
+      <div class="etape"><div class="num">5</div><div><h2>Faites expliquer chaque calcul</h2><p><b>«&nbsp;Quelles colonnes, quels filtres, quelle formule&nbsp;?&nbsp;»</b> Une méthode floue cache souvent une erreur.</p></div></div>
+      <div class="etape"><div class="num">6</div><div><h2>Recalculez le chiffre clé</h2><p>Un total ou un tableau croisé dans Excel, avant toute présentation.</p></div></div>
+    </div>
+  </div>
+  <div class="regle">L'IA trouve des <em>pistes</em>. Vos formules les confirment.</div>
+</div>
+<!--PIED-->
+</body></html>
