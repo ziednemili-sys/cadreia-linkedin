@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><link rel="stylesheet" href="../gabarits/style.css">
+<style>
+.haut { padding: 44px 72px 36px; }
+h1 { font-size: 62px; }
+.sous-titre { margin-top: 14px; }
+.contenu { padding-top: 30px; }
+.entetes { display: grid; grid-template-columns: 330px 1fr; gap: 16px; margin-bottom: 10px; font-size: 19px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--or); padding: 0 4px; }
+.ligne { display: grid; grid-template-columns: 330px 1fr; gap: 16px; margin-bottom: 18px; }
+.question { background: var(--marine); color: #fff; border-radius: 14px; padding: 16px 22px; display: flex; gap: 16px; align-items: center; }
+.question .num { flex: none; width: 44px; height: 44px; font-size: 23px; background: var(--or); color: var(--marine); }
+.question h2 { font-size: 25px; font-weight: 800; line-height: 1.2; }
+.reponse { background: #fff; border: 2px solid var(--trait); border-radius: 14px; padding: 20px 24px; font-size: 22px; line-height: 1.35; color: var(--texte-doux); display: flex; align-items: center; }
+.reponse b { color: var(--marine); }
+.regle { margin-top: 26px; background: #fff; border: 2px solid var(--or); border-radius: 16px; padding: 18px 30px; font-size: 25px; font-weight: 700; text-align: center; }
+.regle em { font-style: normal; color: var(--or); }
+</style></head><body>
+<div class="haut">
+  <div class="surtitre">Fiche manager</div>
+  <h1>Les règles d'IA<br>de votre <em>équipe</em></h1>
+  <div class="sous-titre">6 questions à trancher ensemble, en une réunion</div>
+</div>
+<div class="contenu">
+  <div class="entetes"><div>La question</div><div>Un exemple de règle</div></div>
+  <div class="ligne"><div class="question"><div class="num">1</div><h2>Quels outils&nbsp;?</h2></div><div class="reponse"><span>On travaille avec <b>l'outil validé par l'entreprise</b>, sur le compte professionnel. Pas de compte personnel.</span></div></div>
+  <div class="ligne"><div class="question"><div class="num">2</div><h2>Quelles données&nbsp;?</h2></div><div class="reponse"><span>Ni données personnelles, ni document confidentiel <b>hors de l'outil validé</b>. Dans le doute, on anonymise.</span></div></div>
+  <div class="ligne"><div class="question"><div class="num">3</div><h2>Quelle relecture&nbsp;?</h2></div><div class="reponse"><span>Tout ce qui sort de l'équipe est <b>relu par son auteur</b>. Les chiffres sont recalculés, les sources ouvertes.</span></div></div>
+  <div class="ligne"><div class="question"><div class="num">4</div><h2>Faut-il le dire&nbsp;?</h2></div><div class="reponse"><span>On le précise quand le destinataire <b>s'appuie sur le document pour décider</b>.</span></div></div>
+  <div class="ligne"><div class="question"><div class="num">5</div><h2>Qui répond du résultat&nbsp;?</h2></div><div class="reponse"><span><b>Celui qui signe</b>, jamais l'outil. «&nbsp;C'est l'IA qui l'a écrit&nbsp;» n'est pas une excuse.</span></div></div>
+  <div class="ligne"><div class="question"><div class="num">6</div><h2>Comment partager ce qui marche&nbsp;?</h2></div><div class="reponse"><span>Les demandes efficaces vont dans <b>un dossier commun</b>, avec un exemple de résultat.</span></div></div>
+  <div class="regle">Une règle courte et écrite vaut mieux que <em>dix interdits implicites</em>.</div>
+</div>
+<!--PIED-->
+</body></html>
